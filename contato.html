@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Matheus Tamanchieviez</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #99FF99;
+        }
+
+        .voltar {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        /* Muda a cor do botão com efeito ao passar o mouse */
+        .voltar:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entre em contato</h1>
+
+    <form action="#" method="post">
+        <table>
+            <tr> <!-- a palavra "required" torna o preenchimento do campo obrigatório -->
+                <th><label for="nome">Nome:</label></th>
+                <td><input type="text" name="nome" id="nome" required></td>
+            </tr>
+            <tr><!-- a palavra "required" torna o preenchimento do campo obrigatório -->
+                <th><label for="email">E-mail:</label></th>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr><!-- a palavra "required" torna o preenchimento do campo obrigatório -->
+                <th><label for="msg">Digite sua Mensagem:</label></th>
+                <td><textarea name="msg" id="msg" rows="5" cols="40" required>Digite sua mensagem...</textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Enviar</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <a class="voltar" href="index.html" onClick="return confirmarvolta()">Voltar</a>
+
+    <script>
+        // Função para confirmar se o usuário realmente deseja voltar
+        function confirmarvolta () {
+            return confirm("Tem certeza que deseja voltar?");
+        }
+    </script>
+
+</body>
+
+</html>

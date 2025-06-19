@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação - Matheus Tamanchieviez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        p {
+            max-width: 700px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        li {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .voltar {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+           /* Muda a cor do botão com efeito ao passar o mouse */
+        .voltar:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formação Acadêmica e Idiomas</h1>
+
+    <p>Minha formação inclui graduação em Comércio Exterior pela UNINTER. Atualmente, sou estudante de Engenharia de Software, buscando consolidar minha carreira na área de tecnologia.</p>
+
+    <ul>
+        <li>Graduação em Comércio Exterior - UNINTER</li>
+        <li>Cursando Engenharia de Software</li>
+        <li>Inglês fluente</li>
+        <li>Conhecimentos avançados em Informática</li>
+    </ul>
+
+    <a class="voltar" href="index.html" onclick="return confirmarvolta()">Voltar</a>
+
+    <script>
+        // Função para confirmar se o usuário realmente deseja voltar
+        function confirmarvolta() {
+            return confirm("Tem certeza que deseja voltar?");
+        }
+    </script>
+</body>
+</html>

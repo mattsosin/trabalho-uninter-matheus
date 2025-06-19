@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Matheus Tamanchieviez</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .preview-box {
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      max-width: 800px;
+      height: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .github-link, .voltar {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      border: 2px solid #007BFF;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .github-link:hover, .voltar:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meu Portfólio</h1>
+
+      <p>Trata-se de projeto já desenvolvido em matéria anterior no curso de ADS</p>
+
+  <div class="preview-box">
+      <!-- Aqui é onde aparece a prévia do projeto feito no GitHub -->
+    <iframe src="https://mattsosin.github.io/fds.uninter/#" title="Prévia do Projeto"></iframe>
+  </div>
+
+  <a class="github-link" href="https://github.com/mattsosin/fds.uninter" target="_blank">Ver código no GitHub</a>
+
+  <a class="voltar" href="index.html" onclick="return confirmarVolta()">Voltar</a>
+
+  <script>
+    // Confirmação antes de voltar à página principal
+    function confirmarVolta() {
+      return confirm("Tem certeza que deseja voltar?");
+    }
+  </script>
+</body>
+</html>
